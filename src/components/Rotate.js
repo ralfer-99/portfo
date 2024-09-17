@@ -16,7 +16,7 @@ const Rotate = () => {
             <span key={index}>{char}</span>
           ))}
         </div> */}
-        <Image className="circular-text" src="/circular-text.png" alt='some texts' width={800} height={800} />
+      {/* <Image className="circular-text" src="/circular-text.png" alt='some texts' width={800} height={800} /> */}
     </div>
   </>
   )
