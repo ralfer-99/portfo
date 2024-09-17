@@ -1,12 +1,12 @@
-import Layout from '@/components/Layout'
+import Layout from './src/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from '../../public/images/profile/alf.png'
-import AnimatedText from '@/components/AnimatedText'
-import { LinkArrow } from '@/components/Icons'
-import HireMe from '@/components/HireMe'
-import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
-import TransitionEffect from '@/components/TransitionEffect'
+import profilePic from './public/images/profile/alf.png'
+import AnimatedText from './src/components/AnimatedText'
+import { LinkArrow } from './src/components/Icons'
+import HireMe from './src/components/HireMe'
+import lightBulb from './public/images/svgs/miscellaneous_icons_1.svg'
+import TransitionEffect from './src/components/TransitionEffect'
 
 export default function Home() {
   return (
