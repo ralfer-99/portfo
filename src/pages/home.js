@@ -19,9 +19,9 @@ export default function Home() {
       <TransitionEffect />
 
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
-         <Layout className='pt-0'>
+         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           {/* Container for the profile picture and text */}
-          <div className='flex flex-row items-center justify-between w-full'>
+          <div className='flex flex-row items-center justify-between w-full lg:flex-col'>
             {/* Profile Picture Section */}
             <div className='md:w-1/3 w-full flex justify-center md:justify-start'>
               <Image 
@@ -29,36 +29,38 @@ export default function Home() {
                 alt='Raheethus Alfer' 
                 width={300}   
                 height={360} 
-                className='rounded-full'  
+                className='rounded-full h-auto lg:hidden md:inline-block md:w-full'  
               />
             </div>
 
             {/* Text Section */}
-            <div className='md:w-2/3 w-full flex flex-col items-start ml-6'>
-              <AnimatedText text="Hello, It's Me Raheethus Alfer" className='!text-6xl !text-left' />
-              <p className='my-4 text-base font-medium'>
+            <div className='md:w-2/3 w-full flex flex-col items-start ml-6 lg:w-full lg:text-center'>
+              <AnimatedText text="Hello, It's Me Raheethus Alfer" className='!text-6xl !text-left
+              xl:text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl
+              ' />
+              <p className='my-4 text-base font-medium md:text-sm:text-xs'>
                 I am a full-stack developer proficient in creating web applications with modern technologies such as React, Node.js, React Native, Spring Boot, MySQL, and MongoDB. 
                 My passion lies in developing software that enriches user experiences. I am always eager to embrace new challenges and opportunities to enhance my skills and advance my career as a developer.
               </p>
-              <div className='flex items-center mt-2'>
-                <a href='/dummy.pdf' target='_blank'
+              <div className='flex items-center mt-2 lg:self-center'>
+                <a href='/CV-Alfer.pdf' target='_blank'
                   className='flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border border-solid border-transparent hover:border-dark
                   dark:bg-light dark:text-dark hover:dark:hover:text-light
-                  hover:dark:border-light'
+                  hover:dark:border-light md:p-2 md:px-4 md:text-base'
                   download={true}>
                   Resume <LinkArrow className='w-6 ml-1' />
                 </a>
                 <a href='mailto:ammralfer@gmail.com' target='_blank'
-                  className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'>
+                  className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'>
                   Contact
                 </a>
               </div>
             </div>
           </div>
 
-          <div className='absolute right-40'>
+          <div className='absolute right-40 md:hidden'>
             <Image 
               src={lightBulb} 
               alt='Light Bulb Icon' 
